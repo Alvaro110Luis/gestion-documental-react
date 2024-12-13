@@ -1,20 +1,18 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-
+import "./App.scss";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Registro from "./inicio/Registro.jsx";
+import Menu from "./menu/menu.jsx";
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <div>
-        <p>Organiza, clasifica, accede, y haz seguimiento</p>
-        <h1><span className='logo'>Mi</span> Docs</h1>
-      </div>
-
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Registro></Registro>}></Route>
+          <Route path="/menu" element={<Menu></Menu>}></Route>
+        </Routes>
+      </BrowserRouter>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
