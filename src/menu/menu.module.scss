@@ -1,0 +1,68 @@
+.contHeader {
+  padding: 0.5% 5%;
+  background-color: rgb(20, 20, 20);
+  text-align: center;
+  & article {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    & h1 {
+      margin: 10px 0;
+    }
+    & section {
+      width: 50%;
+      display: flex;
+      justify-content: space-around;
+      & div {
+        padding: 10px;
+        border: 2px solid greenyellow;
+        border-radius: 30px;
+        width: 150px;
+        &:nth-child(2) {
+          background-color: rgb(229, 87, 13);
+          border: 2px solid rgb(229, 87, 13);
+        }
+      }
+    }
+  }
+  & h2 {
+    font-size: 40px;
+    color: greenyellow;
+    margin: 0;
+  }
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 50px;
+  span {
+    padding: 5px;
+    color: black;
+    background-color: greenyellow;
+    border-radius: 100%;
+  }
+}
+.contDoc {
+  display: flex;
+  margin: 0 10%;
+  justify-content: space-around;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.footerDocs {
+  background-color: rgb(20, 20, 20);
+  display: flex;
+  width: 100%;
+  bottom: 0;
+  padding: 30px 0;
+  justify-content: center;
+  gap: 20px;
+  & a {
+    color: greenyellow;
+    text-decoration: none;
+    border: 1px solid greenyellow;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+}

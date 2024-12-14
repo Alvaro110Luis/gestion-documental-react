@@ -1,4 +1,4 @@
-import "./registro.scss";
+import style from "./registro.module.scss";
 import imgInicio from "../assets/paginaprincipal.png";
 import { useForm } from "react-hook-form";
 import { Link } from "react-router-dom";
@@ -10,18 +10,18 @@ function Registro() {
   } = useForm();
   return (
     <>
-      <div className="contHead">
+      <header className={style.contHead}>
         <h1>
           Organiza, clasifica, accede,<br></br> y haz seguimiento...
         </h1>
         <p>
-          <span className="logo">Mi</span> Docs
+          <span className={style.logo}>Mi</span> Docs
         </p>
-      </div>
-      <div className="contBody">
+      </header>
+      <div className={style.contBody}>
         <img src={imgInicio} width="800px" height="455px"></img>
         <form
-          className="contRegistro"
+          className={style.contRegistro}
           onSubmit={handleSubmit((data) => {
             console.log(data);
           })}
@@ -60,12 +60,12 @@ function Registro() {
             <input
               type="submit"
               value="Registrarse"
-              className="btnSubmit"
+              className={style.btnSubmit}
             ></input>
           </Link>
         </form>
       </div>
-      <footer>
+      <footer className={style.contFooter}>
         <p>
           Documentos · Informes · Contratos · Memorias · Folletos · ¡Todo en un
           solo click!
