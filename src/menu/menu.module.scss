@@ -10,20 +10,18 @@
       width: 50%;
       display: flex;
       justify-content: space-around;
-      & div {
+      & a,
+      div {
         padding: 10px;
         border: 2px solid greenyellow;
+        color: white;
         border-radius: 30px;
-        width: 150px;
-      }
-      & a{
-        background-color: rgb(229, 87, 13);
-        border: 2px solid rgb(229, 87, 13);
-        border-radius: 30px;
-        padding: 10px;
         width: 150px;
         text-decoration: none;
-        color: white;
+      }
+      & .subir {
+        background-color: rgb(229, 87, 13);
+        border: 2px solid rgb(229, 87, 13);
       }
     }
   }

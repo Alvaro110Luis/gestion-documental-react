@@ -12,8 +12,8 @@ function Menu() {
             </h1>
           </Link>
           <section>
-            <div>Ver por categorias</div>
-            <Link to='/menu/subirDocumento'>Subir</Link>
+            <Link to='/menu/categorias'>Ver por categorias</Link>
+            <Link className={style.subir} to='/menu/subirDocumento'>Subir</Link>
             <div>Busqueda</div>
           </section>
         </article>

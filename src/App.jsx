@@ -4,6 +4,8 @@ import Registro from "./inicio/Registro.jsx";
 import Menu from "./menu/menu.jsx";
 import InfoDoc from "./infoDoc/infoDoc.jsx";
 import SubirDoc from "./menu/subir_Documento/subirDoc.jsx";
+import CrearCategoria from "./menu/crearCategoria/crearCateg.jsx";
+import Categoria from "./menu/categorias/categ.jsx";
 function App() {
   return (
     <>
@@ -13,7 +15,18 @@ function App() {
             <Route path="/" element={<Registro></Registro>}></Route>
             <Route path="/menu" element={<Menu></Menu>}></Route>
             <Route path="/menu/infodoc" element={<InfoDoc></InfoDoc>}></Route>
-            <Route path="/menu/subirDocumento" element={<SubirDoc></SubirDoc>}></Route>
+            <Route
+              path="/menu/subirDocumento"
+              element={<SubirDoc></SubirDoc>}
+            ></Route>
+            <Route
+              path="/menu/crear-categoria"
+              element={<CrearCategoria></CrearCategoria>}
+            ></Route>
+            <Route
+              path="/menu/categorias"
+              element={<Categoria></Categoria>}
+            ></Route>
           </Routes>
         </div>
       </BrowserRouter>
