@@ -1,0 +1,55 @@
+.contHeader {
+  background-color: rgb(20, 20, 20);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 20px;
+  padding: 0 10%;
+  & b {
+    color: greenyellow;
+    font-size: 30px;
+  }
+  & h1 span {
+    background-color: greenyellow;
+    color: black;
+    border-radius: 100%;
+    padding: 5px;
+  }
+}
+.contMain {
+  & form {
+    display: flex;
+    flex-direction: column;
+    & p {
+      margin: 10px 0;
+      width: 49%;
+      text-align: end;
+      display: inline-block;
+    }
+    & input {
+      background-color: black;
+      border: 1px solid greenyellow;
+      padding: 10px 15px;
+      color: white;
+      border-radius: 15px;
+      width: 200px;
+      margin: 5px 20px;
+      &:focus-visible {
+        outline: none;
+      }
+      &[type="radio"] {
+        width: 20px;
+      }
+    }
+  }
+}
+.contFooter {
+  background-color: rgb(20, 20, 20);
+  color: grey;
+  & div {
+    border: 2px solid greenyellow;
+    margin: 10px 20%;
+    border-radius: 10px;
+    padding: 0 20px;
+  }
+}

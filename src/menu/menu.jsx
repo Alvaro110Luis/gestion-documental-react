@@ -6,12 +6,14 @@ function Menu() {
     <>
       <header className={style.contHeader}>
         <article>
-          <h1 className={style.logo}>
-            <span>Mi</span>Docs
-          </h1>
+          <Link to="/" className={style.logo}>
+            <h1>
+              <span>Mi</span>Docs
+            </h1>
+          </Link>
           <section>
             <div>Ver por categorias</div>
-            <div>Subir</div>
+            <Link to='/menu/subirDocumento'>Subir</Link>
             <div>Busqueda</div>
           </section>
         </article>

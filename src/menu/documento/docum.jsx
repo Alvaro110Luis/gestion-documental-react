@@ -3,7 +3,7 @@ import sinImagen from "./documentoPruebapng.png";
 import { Link } from "react-router-dom";
 function Docum() {
   return (
-    <Link to='/' className={style.linkDoc}>
+    <Link to='/menu/infoDoc' className={style.linkDoc}>
       <img src={sinImagen}></img>
     </Link>
   );

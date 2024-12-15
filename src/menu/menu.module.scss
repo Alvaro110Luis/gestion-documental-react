@@ -6,9 +6,6 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    & h1 {
-      margin: 10px 0;
-    }
     & section {
       width: 50%;
       display: flex;
@@ -18,10 +15,15 @@
         border: 2px solid greenyellow;
         border-radius: 30px;
         width: 150px;
-        &:nth-child(2) {
-          background-color: rgb(229, 87, 13);
-          border: 2px solid rgb(229, 87, 13);
-        }
+      }
+      & a{
+        background-color: rgb(229, 87, 13);
+        border: 2px solid rgb(229, 87, 13);
+        border-radius: 30px;
+        padding: 10px;
+        width: 150px;
+        text-decoration: none;
+        color: white;
       }
     }
   }
@@ -34,12 +36,17 @@
 
 .logo {
   font-weight: bold;
-  font-size: 50px;
-  span {
-    padding: 5px;
-    color: black;
-    background-color: greenyellow;
-    border-radius: 100%;
+  font-size: 30px;
+  color: white;
+  text-decoration: none;
+  & h1 {
+    margin: 10px 0;
+    & span {
+      padding: 5px;
+      color: black;
+      background-color: greenyellow;
+      border-radius: 100%;
+    }
   }
 }
 .contDoc {
