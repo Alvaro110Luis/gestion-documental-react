@@ -14,7 +14,7 @@ function App() {
       <BrowserRouter>
         <div className={style.cont}>
           <Routes>
-            <Route path="/" element={<Registro></Registro>}>
+            <Route path="/gestion-documental-react" element={<Registro></Registro>}>
               <Route
                 path={"/gestion-documental-react" || "/registro"}
                 element={<Crearcuenta></Crearcuenta>}
