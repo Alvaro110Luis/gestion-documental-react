@@ -16,7 +16,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Registro></Registro>}>
               <Route
-                path={"gestion-documental-react/" || "/registro"}
+                path={"/gestion-documental-react" || "/registro"}
                 element={<Crearcuenta></Crearcuenta>}
               ></Route>
               <Route
