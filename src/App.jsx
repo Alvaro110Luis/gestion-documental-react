@@ -16,11 +16,11 @@ function App() {
           <Routes>
             <Route path="/gestion-documental-react" element={<Registro></Registro>}>
               <Route
-                path={"/gestion-documental-react" || "/registro"}
+                path={"/gestion-documental-react" || "/gestion-documental-react/registro"}
                 element={<Crearcuenta></Crearcuenta>}
               ></Route>
               <Route
-                path="/iniciaSesion"
+                path="/gestion-documental-react/iniciaSesion"
                 element={<IniciaSesion></IniciaSesion>}
               ></Route>
             </Route>
