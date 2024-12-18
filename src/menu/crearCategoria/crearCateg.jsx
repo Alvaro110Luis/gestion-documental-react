@@ -1,22 +1,39 @@
 import { Link } from "react-router-dom";
 import style from "./crearCateg.module.scss";
+import { useContext, useState } from "react";
+import { MyContext } from "../../Context";
 function CrearCategoria() {
+  const [nuevaCat, setNuevaCat] = useState("");
+  const { cats, setCats } = useContext(MyContext);
   return (
     <>
       <header className={style.contHeader}>
-        <Link to='/menu'>
+        <Link to="/menu">
           <h1>
             <span>Mi</span>Docs
           </h1>
         </Link>
-        <b>Crear Nueva Categoria</b>
+        <Link
+          to="/menu/categorias"
+          onClick={() => {
+            setCats((rev) => [...rev, nuevaCat]);
+            console.log(cats);
+          }}
+        >
+          Crear Nueva Categoria
+        </Link>
       </header>
       <main className={style.contMain}>
         <form>
           <article className={style.contOpt}>
             <div>
               <p>Categoria:</p>
-              <input type="text"></input>
+              <input
+                type="text"
+                onChange={(e) => {
+                  setNuevaCat(e.target.value);
+                }}
+              ></input>
             </div>
             <div>
               <p>Ruta ubicacion fisica:</p>

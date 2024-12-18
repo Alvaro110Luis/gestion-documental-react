@@ -40,6 +40,14 @@
       &[type="radio"] {
         width: 20px;
       }
+      &[type="file"] {
+        &::-webkit-file-upload-button {
+          display: none;
+        }
+        &:hover {
+          cursor: pointer;
+        }
+      }
     }
   }
 }

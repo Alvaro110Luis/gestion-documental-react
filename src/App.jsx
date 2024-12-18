@@ -6,13 +6,24 @@ import InfoDoc from "./infoDoc/infoDoc.jsx";
 import SubirDoc from "./menu/subir_Documento/subirDoc.jsx";
 import CrearCategoria from "./menu/crearCategoria/crearCateg.jsx";
 import Categoria from "./menu/categorias/categ.jsx";
+import Crearcuenta from "./inicio/crearCuenta.jsx";
+import IniciaSesion from "./inicio/iniciarSesion.jsx";
 function App() {
   return (
     <>
       <BrowserRouter>
         <div className={style.cont}>
           <Routes>
-            <Route path="/" element={<Registro></Registro>}></Route>
+            <Route path="/" element={<Registro></Registro>}>
+              <Route
+                path={"/" || "/registro"}
+                element={<Crearcuenta></Crearcuenta>}
+              ></Route>
+              <Route
+                path="/iniciaSesion"
+                element={<IniciaSesion></IniciaSesion>}
+              ></Route>
+            </Route>
             <Route path="/menu" element={<Menu></Menu>}></Route>
             <Route path="/menu/infodoc" element={<InfoDoc></InfoDoc>}></Route>
             <Route
@@ -27,6 +38,7 @@ function App() {
               path="/menu/categorias"
               element={<Categoria></Categoria>}
             ></Route>
+            <Route path="*" element={<h1>Pagina no encontrada</h1>}></Route>
           </Routes>
         </div>
       </BrowserRouter>

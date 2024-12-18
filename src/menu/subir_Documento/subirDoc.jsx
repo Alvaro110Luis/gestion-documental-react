@@ -33,22 +33,20 @@ function SubirDoc() {
             <input type="text"></input>
           </label>
           <label>
-            <p>Fecha de Subida:</p>
-            <input type="text"></input>
-          </label>
-          <label>
             <p>Revision:</p>
             <input type="text"></input>
           </label>
           <label>
-            <p>Ubicacion fisica actual;</p>
+            <p>Ubicacion fisica actual:</p>
             <input type="text"></input>
           </label>
           <div>
             <p>Cargar foto de portada:</p>
-            <input type="radio" name="cargar"></input>
-            Cargar archivo Digital:
-            <input type="radio" name="cargar"></input>
+            <input type="file"></input>
+          </div>
+          <div>
+            <p>Cargar archivo Digital:</p>
+            <input type="file"></input>
           </div>
           <div>
             <p></p>

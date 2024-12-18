@@ -1,0 +1,33 @@
+.contRegistro {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-evenly;
+  .btnSubmit {
+    width: 100%;
+    background-color: rgb(150, 50, 200);
+    border-radius: 20px;
+    transition: 0.5s all;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    background-color: rgb(150, 50, 200);
+    color: white;
+    &:hover {
+      cursor: pointer;
+      background-color: rgb(100, 0, 150);
+    }
+  }
+  div input {
+    background-color: black;
+    color: white;
+    border: 2px solid greenyellow;
+    padding: 15px 25px;
+    border-radius: 30px;
+    margin-bottom: 10px;
+    &:focus-visible {
+      border: 2px solid green;
+      outline: none;
+    }
+  }
+}
